@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="连续滚动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvf-zT-I6c">
+                                <rect key="frame" x="154" y="122" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHs-Qq-05e" customClass="XJScrollTextView">
+                                <rect key="frame" x="138" y="157" width="100" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="PoP-OD-iOx"/>
+                                    <constraint firstAttribute="height" constant="33" id="kd4-H2-3bM"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="间隔滚动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zQ-7B-VJ1">
+                                <rect key="frame" x="154" y="213" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="往复滚动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTd-7A-FfN">
+                                <rect key="frame" x="154" y="310" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0g-oq-McU" customClass="XJScrollTextView">
+                                <rect key="frame" x="137" y="345" width="100" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="iaE-ir-I3d"/>
+                                    <constraint firstAttribute="height" constant="33" id="rSP-8f-jYs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYV-3L-GZh" customClass="XJScrollTextView">
+                                <rect key="frame" x="137" y="248" width="100" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="X4V-wl-O1S"/>
+                                    <constraint firstAttribute="height" constant="33" id="and-Gv-xGh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0zQ-7B-VJ1" secondAttribute="bottom" constant="433" id="0MN-Ao-TAi"/>
+                            <constraint firstItem="H0g-oq-McU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Mb-Ok-Hlz"/>
+                            <constraint firstItem="H0g-oq-McU" firstAttribute="top" secondItem="qTd-7A-FfN" secondAttribute="bottom" constant="14" id="4hP-NO-inC"/>
+                            <constraint firstItem="0zQ-7B-VJ1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hr5-ez-0Uq"/>
+                            <constraint firstItem="rvf-zT-I6c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="102" id="M64-ZA-yG7"/>
+                            <constraint firstItem="rvf-zT-I6c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T9z-gk-4mh"/>
+                            <constraint firstItem="UHs-Qq-05e" firstAttribute="top" secondItem="rvf-zT-I6c" secondAttribute="bottom" constant="14" id="jWr-G7-Ewa"/>
+                            <constraint firstItem="UHs-Qq-05e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lRE-cL-MBA"/>
+                            <constraint firstItem="qTd-7A-FfN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ntR-fF-OrV"/>
+                            <constraint firstItem="MYV-3L-GZh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qch-86-aK3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qTd-7A-FfN" secondAttribute="bottom" constant="336" id="qgG-qO-LZh"/>
+                            <constraint firstItem="MYV-3L-GZh" firstAttribute="top" secondItem="0zQ-7B-VJ1" secondAttribute="bottom" constant="14" id="zRa-xQ-yr7"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ContinuousScrollTextView" destination="UHs-Qq-05e" id="RKE-Lo-8k8"/>
+                        <outlet property="RoundScrollTextView" destination="H0g-oq-McU" id="dCj-cV-CAC"/>
+                        <outlet property="SpaceScrollTextView" destination="MYV-3L-GZh" id="Vcw-7k-Sth"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287.5" y="299.5"/>
+        </scene>
+    </scenes>
+</document>
